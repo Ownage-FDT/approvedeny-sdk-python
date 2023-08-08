@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "approvedeny"
+version = "0.1.0"
+description = "A Python SDK for the Approvedeny API"
+authors = [
+    { name = "Olatayo Olayemi", email = "olatayo.olayemi.peter@gmail.com" },
+    { name = "Solomon Ajayi" },
+]
+maintainers = [
+    { name = "Olatayo Olayemi", email = "olatayo.olayemi.peter@gmail.com" },
+    { name = "Solomon Ajayi" },
+]
+readme = "README.md"
+license = { file = "LICENSE.md" }
+requires-python = ">=3.7"
+keywords = ["approvedeny", "approvedeny-sdk", "approvedeny-sdk-python"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+dependencies = ["requests >= 2.27"]
+
+[project.optional-dependencies]
+tests = ['pytest >=6.0', "requests-mock >=1.9"]
+
+[project.urls]
+homepage = "https://github.com/Ownage-FDT/approvedeny-sdk-python"
+repository = "https://github.com/Ownage-FDT/approvedeny-sdk-python"
+documentation = "https://github.com/Ownage-FDT/approvedeny-sdk-python/blob/main/README.md"
+changelog = "https://github.com/Ownage-FDT/approvedeny-sdk-python/blob/main/CHANGELOG.md"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+pythonpath = ["src"]
