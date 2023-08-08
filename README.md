@@ -61,7 +61,7 @@ else:
 ### Testing
 
 ```bash
-npm run test
+pytest
 ```
 
 ### Changelog
