@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python_version }}
-        cache: npm
+        cache: "pip"
 
     - name: Install Python dependencies
       run: |
