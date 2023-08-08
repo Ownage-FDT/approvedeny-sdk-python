@@ -1,7 +1,6 @@
 import json
 import hashlib
 import hmac
-from unittest.mock import patch
 import pytest
 import requests_mock
 from client import Client
